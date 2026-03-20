@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="SIGMA: A Physics-Based Benchmark for Gas Chimney Understanding in Seismic Images">
+  <meta name="keywords" content="seismic imaging, gas chimney, benchmark dataset">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIGMA: A Physics-Based Benchmark for Gas Chimney Understanding in Seismic Images</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="#abstract">Abstract</a>
+      <a class="navbar-item" href="#pipeline">Pipeline</a>
+      <a class="navbar-item" href="#statistics">Statistics</a>
+      <a class="navbar-item" href="#samples">Samples</a>
+      <a class="navbar-item" href="#bibtex">BibTeX</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">SIGMA: A Physics-Based Benchmark for Gas Chimney Understanding in Seismic Images</h1>
+          <div class="conference-badge">
+            <img src="./static/images/cvpr-2026.png" alt="Accepted at CVPR 2026">
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="https://giabao804.github.io/" target="_blank" rel="noopener noreferrer">Bao Truong</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?user=F5Fr2ysAAAAJ" target="_blank" rel="noopener noreferrer">Quang Nguyen</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?user=unbPvWAAAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer">Baoru Huang</a><sup>5</sup>,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?user=P5UDu9sAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Jinpei Han</a><sup>2</sup>,</span>
+            <span class="author-block"><a href="https://sites.google.com/view/vannguyen" target="_blank" rel="noopener noreferrer">Van Nguyen</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?user=8ck0k_UAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Ngan Le</a><sup>3</sup>,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?user=mnNKKlAAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Minh-Tan Pham</a><sup>4</sup>,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?user=PD4zoNQAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Doan Huy Hien</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="https://www.csc.liv.ac.uk/~anguyen/" target="_blank" rel="noopener noreferrer">Anh Nguyen</a><sup>5,*</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>FPT Software AI Center,</span>
+            <span class="author-block"><sup>2</sup>Imperial College London,</span>
+            <span class="author-block"><sup>3</sup>University of Arkansas,</span>
+            <span class="author-block"><sup>4</sup>University of South Brittany,</span>
+            <span class="author-block"><sup>5</sup>University of Liverpool</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="#" onclick="return false;" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#" onclick="return false;" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#" onclick="return false;" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-database"></i></span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="has-text-centered">
+  <img style="width: 58%; max-width: 900px;" src="./static/images/sigma/intro_updated.png" alt="SIGMA teaser">
+</div>
+
+<section class="section" id="abstract">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Seismic images reconstruct subsurface reflectivity from field recordings, guiding exploration and reservoir monitoring.
+            Gas chimneys are vertical anomalies caused by subsurface fluid migration. Understanding these phenomena is crucial for
+            assessing hydrocarbon potential and avoiding drilling hazards. However, accurate detection is challenging due to strong
+            seismic attenuation and scattering. Traditional physics-based methods are computationally expensive and sensitive to model
+            errors, while deep learning offers efficient alternatives, yet lacks labeled datasets. In this work, we introduce
+            <strong>SIGMA</strong>, a new physics-based dataset for gas chimney understanding in seismic images, featuring
+            pixel-level gas-chimney masks for detection and paired degraded/ground-truth images for enhancement.
+          </p>
+        </div>
+        <div class="publication-video">
+          <video id="teaser" autoplay="" controls="" muted="" loop="" playsinline="" width="100%" height="100%">
+            <source src="./static/videos/CVPR26-SIGMA.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pipeline">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Dataset Generation Pipeline</h2>
+    <div class="content has-text-justified">
+      <p>
+        SIGMA is generated with a physics-grounded framework: from real-world velocity models, we simulate gas-chimney effects,
+        build gas-affected velocity fields, and synthesize seismic images with reverse time migration. This pipeline provides paired
+        clean/degraded seismic images and gas-chimney supervision for benchmark tasks.
+      </p>
+    </div>
+    <div class="columns is-centered">
+      <div class="column">
+        <img src="./static/images/sigma/data_pipeline.png" alt="SIGMA main generation framework">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="statistics">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Dataset Statistics</h2>
+
+    <div class="columns is-multiline is-centered stat-grid">
+      <div class="column is-6-tablet is-4-desktop">
+        <div class="box has-text-centered">
+          <p class="stat-label">Seismic Image Pairs</p>
+          <p class="stat-value">400</p>
+        </div>
+      </div>
+      <div class="column is-6-tablet is-4-desktop">
+        <div class="box has-text-centered">
+          <p class="stat-label">Velocity Models</p>
+          <p class="stat-value">20</p>
+        </div>
+      </div>
+      <div class="column is-6-tablet is-4-desktop">
+        <div class="box has-text-centered">
+          <p class="stat-label">Total Coverage</p>
+          <p class="stat-value">1,600+ km²</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="samples">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Samples</h2>
+    <div class="columns is-centered">
+      <div class="column">
+        <img src="./static/images/sigma/samples_with_box_v2.png" alt="SIGMA samples_with_box_v2">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="bibtex">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{truong2026sigma,
+  title   = {SIGMA: A Physics-Based Benchmark for Gas Chimney Understanding in Seismic Images},
+  author  = {Truong, Bao and Nguyen, Quang and Huang, Baoru and Han, Jinpei and Nguyen, Van and Le, Ngan and Pham, Minh-Tan and Hien, Doan Huy and Nguyen, Anh},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year    = {2026},
+  url     = {https://airvlab.github.io/sigma}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        We borrow the page template from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>. Special thanks to them!
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
